@@ -28,7 +28,6 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['mydjangoblogapp01.herokuapp.com']
 
-
 # Application definition
 
 INSTALLED_APPS = [
