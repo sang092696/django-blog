@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
-from .models import Post
+from .models import Post, Comment
 from django.views.generic import (ListView, 
     DetailView, #for class-based views
     CreateView,
@@ -71,7 +71,7 @@ class PostDeleteView(LoginRequiredMixin,UserPassesTestMixin,DeleteView):
             return True
         return False
 
-
+#For comments View
 
 def about(request):
     return render(request, 'blog/about.html', {'title':'About'})
